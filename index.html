@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixa Rwanda</title>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body>
+    <!--Navigation Bar-->
+
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="/index.html">Fixa<span>Rwanda</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="/images/menu.svg" alt="Open the menu" />
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="/images/exit.svg" alt="Close the menu" />
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="sign-up-cta"><a href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Section 01 -->
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="sub-head">Schedule, Manage &amp; Pay</p>
+                <h1>Workforce management from anywhere</h1>
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Download for free</a>
+                    <a href="#" class="demo">
+                        <img src="/images/watch.svg" alt="App demo" /> Watch a demo
+                    </a>
+                </div>
+            </div>
+
+            <img src="/images/illustration.svg" class="hero-image" alt="Illustration image" />
+        </div>
+    </section>
+
+    <!-- Section 02 -->
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Register workers</li>
+                <li>Complete tasks</li>
+                <li>Manage attendance</li>
+                <li>Bulk SMS</li>
+                <li>Send Invoices &amp quotations</li>
+                <li>Mobile money payout</li>
+            </ul>
+
+            <img src="/images/holding-phone.jpg" alt="Image of a hand holding a phone" />
+        </div>
+    </section>
+
+    <!-- Section 03 -->
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="/images/person.jpg" alt="Image of Jane Doe" />
+                    <blockquote>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, voluptas!
+                    </blockquote>
+                    <cite>Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="/images/person.jpg" alt="Image of Jane Doe" />
+                    <blockquote>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, voluptas!
+                    </blockquote>
+                    <cite>Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="/images/person.jpg" alt="Image of Jane Doe" />
+                    <blockquote>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, voluptas!
+                    </blockquote>
+                    <cite>Jane Doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section 04 -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" />
+
+                    <!-- <label for="email">Email</label>
+                <input type="email" id="email" name="email" /> -->
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send Message" />
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d434.64919440680046!2d30.059816174560513!3d-1.9509360832906024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca5a86d814c61%3A0x7d3b83e12b1c11a9!2sNORRSKEN%20KIGALI%20HOUSE!5e0!3m2!1sen!2sus!4v1640410420234!5m2!1sen!2sus"
+                    width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    const menuButton = document.getElementById("mobile-cta");
+    const nav = document.querySelector("nav");
+    const mobileBtnExit = document.getElementById("mobile-exit");
+
+    menuButton.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+    });
+
+    mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+    });
+</script>
+
+<footer>&copy; Fixa Rwanda Inc 2022</footer>
+
+</html>
